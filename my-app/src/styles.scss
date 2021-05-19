@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+body{
+  overflow: hidden;
+  background-image: url('assets/imagenes/1.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat
+}
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
