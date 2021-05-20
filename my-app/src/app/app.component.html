@@ -1,21 +1,20 @@
 
-<header class="sticky-top d-flex align-text-bottom" >
+<header class="sticky-top d-flex align-text-bottom col-12" >
   <div class="toolbar d-flex aling-center col-12" role="banner">
    <div class=" col-2">
     <button class="d-flex align-text-bottom justify-content-center">
       <img alt="Logo" src="assets\imagenes\Logo.png"/>
-    <h6> Pruebas</h6>
+      <a routerLink="/home"  (click) = "oneState=false; twoState=false"><h6> Pruebas</h6></a>
     </button>
    </div>
 
   <div class= "col-10 mi_nav">
     <nav ngbNav #nav="ngbNav" class="nav-tabs justify-content-center">
-      <ng-container ngbNavItem ngbButtonLabel="oneState">
-        <a ngbNavLink ngbButtonLabel="oneState" (click) = "oneState=true; twoState=false;" >Historia</a>
-
+      <ng-container ngbNavItem>
+        <a routerLink="/one" class="btn btn-default"  ngbNavLink (click) = "oneState=true; twoState=false" >History"</a>
       </ng-container>
-      <ng-container ngbNavItem ngbButtonLabel="twoState">
-        <a ngbNavLink ngbButtonLabel="twoState" (click) = "oneState=false; twoState=true;" >Desarrollo</a>
+      <ng-container ngbNavItem >
+        <a routerLink="/two" class="btn btn-default"  ngbNavLink (click) = "oneState=false; twoState=true">Develope</a>
         <ng-template ngbNavContent>
           <p>2</p>
         </ng-template>
@@ -40,11 +39,15 @@
       </ng-container>
     </nav>
   </div>
-
-
 </div>
 </header>
-<footer>
+
+<section  class="d-flex justify-content-center col-8">
+<app-one *ngIf="oneState"  class="d-flex justify-content-center"></app-one>
+<app-two *ngIf="twoState"></app-two>
+</section>
+
+<footer class="fixed-bottom">
   <div class="col-2 d-flex justify-content-end">
     <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
       <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
@@ -60,7 +63,3 @@
     </a>
   </div>
 </footer>
-
-<app-inicio onclick="desapair()"></app-inicio>
-<app-one *ngIf="oneState"></app-one>
-<app-two *ngIf="twoState"></app-two>
