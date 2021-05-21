@@ -4,38 +4,23 @@
    <div class=" col-2">
     <button class="d-flex align-text-bottom justify-content-center">
       <img alt="Logo" src="assets\imagenes\Logo.png"/>
-      <a routerLink="/home"  (click) = "oneState=false; twoState=false"><h6> Pruebas</h6></a>
+      <a routerLink="/first" (click) = "homeState=false; beginningState=true; historyState=false; developState=false; enemiesState=false; downloadState=false"><h6> The Game</h6></a>
     </button>
    </div>
 
   <div class= "col-10 mi_nav">
     <nav ngbNav #nav="ngbNav" class="nav-tabs justify-content-center">
       <ng-container ngbNavItem>
-        <a routerLink="/one" class="btn btn-default"  ngbNavLink (click) = "oneState=true; twoState=false" >History"</a>
-      </ng-container>
-      <ng-container ngbNavItem >
-        <a routerLink="/two" class="btn btn-default"  ngbNavLink (click) = "oneState=false; twoState=true">Develope</a>
-        <ng-template ngbNavContent>
-          <p>2</p>
-        </ng-template>
+        <a routerLink="/history" class="btn btn-default"  ngbNavLink (click) = "homeState=false; beginningState=false; historyState=true; developState=false; enemiesState=false; downloadState=false" >History"</a>
       </ng-container>
       <ng-container ngbNavItem>
-        <a href="https://scotch.io/courses/build-your-first-angular-website/adding-an-imagelogo-in-angular">Three</a>
-        <ng-template ngbNavContent>
-          <p>3</p>
-        </ng-template>
+        <a routerLink="/develop" class="btn btn-default"  ngbNavLink (click) = "homeState=false; beginningState=false; historyState=false; developState=true; enemiesState=false; downloadState=false">Develop</a>
       </ng-container>
       <ng-container ngbNavItem>
-        <a ngbNavLink>Descarga el juego</a>
-        <ng-template ngbNavContent>
-          <p>4</p>
-        </ng-template>
+        <a routerLink="/enemies" class="btn btn-default"  ngbNavLink (click) = "homeState=false; beginningState=false; historyState=false; developState=false; enemiesState=true; downloadState=false">Enemies</a>
       </ng-container>
       <ng-container ngbNavItem>
-        <a ngbNavLink>Five</a>
-        <ng-template ngbNavContent>
-          <p>5</p>
-        </ng-template>
+        <a routerLink="/download" class="btn btn-default"  ngbNavLink (click) = "homeState=false; beginningState=false; historyState=false; developState=false; enemiesState=false; downloadState=true">Download</a>
       </ng-container>
     </nav>
   </div>
@@ -43,8 +28,12 @@
 </header>
 
 <section  class="d-flex justify-content-center col-8">
-<app-one *ngIf="oneState"  class="d-flex justify-content-center"></app-one>
-<app-two *ngIf="twoState"></app-two>
+  <app-home *ngIf="homeState"> </app-home>
+<app-beginning *ngIf="beginningState" > </app-beginning>
+<app-history *ngIf="historyState"  class="d-flex justify-content-center"></app-history>
+<app-develop *ngIf="developState"></app-develop>
+<app-enemies *ngIf="enemiesState"></app-enemies>
+<app-download *ngIf="downloadState"> </app-download>
 </section>
 
 <footer class="fixed-bottom">

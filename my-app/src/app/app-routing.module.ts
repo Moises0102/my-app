@@ -1,17 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import {InicioComponent} from './inicio/inicio.component';
-import { OneComponent } from './components/one/one.component';
-import { TwoComponent } from './components/two/two.component';
-//import { ThreeComponent } from './components/one/one.component';
+import { BeginningComponent } from './beginning/beginning.component';
+import { HistoryComponent } from './components/history/history.component';
+import { DevelopComponent } from './components/develop/develop.component';
+import { DownloadComponent } from './components/download/download.component';
+import { EnemiesComponent } from './components/enemies/enemies.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: '',  pathMatch:'full', redirectTo: '/home' },
-  { path: 'home',  component: InicioComponent },
-  { path: 'one', component: OneComponent },
-  { path: 'two', component: TwoComponent },
-  //{ path: 'three', component: ThreeComponent}
+  { path: 'home',  component: HomeComponent },
+  { path: 'first', component: BeginningComponent },
+  { path: 'history', component: HistoryComponent },
+  { path: 'develop', component: DevelopComponent },
+  { path: 'enemies', component: EnemiesComponent },
+  { path: 'download', component: DownloadComponent }
 ];
 
 @NgModule({
@@ -19,6 +23,6 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  static components = [ InicioComponent, OneComponent , TwoComponent ];
+  static components = [ BeginningComponent, HistoryComponent , DevelopComponent , DownloadComponent , EnemiesComponent , HomeComponent];
 
  }
