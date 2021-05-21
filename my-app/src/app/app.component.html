@@ -2,12 +2,11 @@
 <header class="sticky-top d-flex align-text-bottom col-12" >
   <div class="toolbar d-flex aling-center col-12" role="banner">
    <div class=" col-2">
-    <button class="d-flex align-text-bottom justify-content-center">
+    <button class="d-flex align-text-bottom justify-content-center" routerLink="/first" (click) = "homeState=false; beginningState=true; historyState=false; developState=false; enemiesState=false; downloadState=false">
       <img alt="Logo" src="assets\imagenes\Logo.png"/>
-      <a routerLink="/first" (click) = "homeState=false; beginningState=true; historyState=false; developState=false; enemiesState=false; downloadState=false"><h6> The Game</h6></a>
+      <a><h6> The Game</h6></a>
     </button>
    </div>
-
   <div class= "col-10 mi_nav">
     <nav ngbNav #nav="ngbNav" class="nav-tabs justify-content-center">
       <ng-container ngbNavItem>
@@ -28,7 +27,7 @@
 </header>
 
 <section  class="d-flex justify-content-center col-8">
-  <app-home *ngIf="homeState"> </app-home>
+<app-home *ngIf="homeState"> </app-home>
 <app-beginning *ngIf="beginningState" > </app-beginning>
 <app-history *ngIf="historyState"  class="d-flex justify-content-center"></app-history>
 <app-develop *ngIf="developState"></app-develop>
@@ -37,7 +36,13 @@
 </section>
 
 <footer class="fixed-bottom">
-  <div class="col-2 d-flex justify-content-end">
+  <div class="col-10">
+    <img src="assets\imagenes\Logo.png" alt="">
+  </div>
+  <div>
+
+  </div>
+  <div class="col-2 d-flex justify-content-center">
     <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
       <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
         <rect width="400" height="400" fill="none"/>
@@ -51,4 +56,5 @@
       </svg>
     </a>
   </div>
+
 </footer>

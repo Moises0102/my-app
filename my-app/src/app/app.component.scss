@@ -83,8 +83,13 @@
 
   footer {
     align-items: flex-end;
+    height: 10%;
+    display: flex;
+    background-color: black;
 
-
+  }
+  footer>div>img{
+    width: 5%;
   }
 
   footer a {

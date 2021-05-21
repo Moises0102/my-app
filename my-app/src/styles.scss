@@ -1,13 +1,11 @@
 
 .body{
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: -webkit-fill-available;
   background-color:rgb(16, 14, 17) ;
-  overflow: hidden;
   background-image: url('assets/imagenes/bonfire.gif');
   background-repeat: no-repeat;
-  background-origin: content-box;
   background-position-x: center;
   background-position-y: -100%;
 
