@@ -1,13 +1,13 @@
 
 <header class="sticky-top d-flex align-text-bottom col-12" >
   <div class="toolbar d-flex aling-center col-12" role="banner">
-   <div class=" col-2">
-    <button class="d-flex align-text-bottom justify-content-center" routerLink="/first" (click) = "homeState=false; beginningState=true; historyState=false; developState=false; enemiesState=false; downloadState=false">
+    <div class=" col-2">
+    <button  id="first" onclick="cargar()" class="d-flex align-text-bottom justify-content-center" routerLink="/first" (click) = "homeState=false; beginningState=true; historyState=false; developState=false; enemiesState=false; downloadState=false">
       <img alt="Logo" src="assets\imagenes\Logo.png"/>
       <a><h6> The Game</h6></a>
     </button>
-   </div>
-  <div class= "col-10 mi_nav">
+    </div>
+    <div class= "col-10 mi_nav">
     <nav ngbNav #nav="ngbNav" class="nav-tabs justify-content-center">
       <ng-container ngbNavItem>
         <a routerLink="/history" class="btn btn-default"  ngbNavLink (click) = "homeState=false; beginningState=false; historyState=true; developState=false; enemiesState=false; downloadState=false" >History"</a>
@@ -22,8 +22,8 @@
         <a routerLink="/download" class="btn btn-default"  ngbNavLink (click) = "homeState=false; beginningState=false; historyState=false; developState=false; enemiesState=false; downloadState=true">Download</a>
       </ng-container>
     </nav>
+    </div>
   </div>
-</div>
 </header>
 
 <section  class="d-flex justify-content-center col-8">

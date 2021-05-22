@@ -16,8 +16,6 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-
-
   header > div > div > button {
     background-color: rgb(16, 14, 17);
     align-items: center;
@@ -31,17 +29,32 @@
     background-color: rgb(16, 14, 17);
     color: white;
     font-family: doctor;
-  }
 
-  .toolbar img {
-    width: 20%;
+    img{
+      width: 20%;
     margin: 0 5px;
+    }
   }
 
-  nav > * {
-    margin: 0 2%;
+  nav{
+    a{
+      color: white;
+    text-decoration: none;
+    font-family: badsignal;
+    }
+    a:visited{
+      background-color: rgb(16, 14, 17);
+      color: white;
+    }
+    a:hover{
+      background-color: white;
+      color: black;
+    }
+    *{
+      margin: 0 2%;
     font-size: x-large;
     padding: 0 15px;
+    }
   }
 
   h6{
@@ -49,33 +62,18 @@
     text-decoration: none;
 
   }
-  nav > a  {
-    color: white;
-    text-decoration: none;
-    font-family: badsignal;
-  }
 
-  nav > a:visited{
-    background-color: rgb(16, 14, 17);
-    color: white;
-  }
-
-  nav > a:hover{
-    background-color: white;
-    color: black;
-  }
 
   .nav-tabs{
     border: 0;
   }
 
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
+   #twitter-logo:hover,
+   #youtube-logo:hover {
     opacity: 0.8;
   }
 
   section{
-
     width: 80%;
     height: -webkit-fill-available;
     background-color:rgba(#ffffff, 0.03);
@@ -86,15 +84,15 @@
     height: 10%;
     display: flex;
     background-color: black;
-
-  }
-  footer>div>img{
-    width: 5%;
-  }
-
-  footer a {
-    display: flex;
+    div{
+      img{
+        width: 3%;
+      }
+    }
+    a{
+      display: flex;
     align-items: center;
+    }
   }
 
   /* Responsive Styles */
