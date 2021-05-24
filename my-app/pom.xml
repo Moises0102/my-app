@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>my-app</groupId>
   <artifactId>my-app</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <name>my-app</name>
-  <description>aplicacion</description>
+  <description>website from the game</description>
 </project>

@@ -12,6 +12,7 @@ import { BeginningComponent } from './beginning/beginning.component';
 import { DownloadComponent } from './components/download/download.component';
 import { EnemiesComponent } from './components/enemies/enemies.component';
 import { HomeComponent } from './components/home/home.component';
+import { AcountComponent } from './components/acount/acount.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HomeComponent } from './components/home/home.component';
     BeginningComponent,
     DownloadComponent,
     EnemiesComponent,
-    HomeComponent
+    HomeComponent,
+    AcountComponent
     ],
   imports: [
     BrowserModule,
