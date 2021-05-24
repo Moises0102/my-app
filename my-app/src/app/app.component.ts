@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  homeState = true;
+  beginningState = false;
+  historyState = false;
+  developState = false;
+  enemiesState = false;
+  downloadState = false;
 
-  oneState = false;
-  twoState = false;
-
-  title = 'pruebas';
+  title = 'The Game';
 }

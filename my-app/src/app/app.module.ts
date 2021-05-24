@@ -6,17 +6,25 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OneComponent } from './components/one/one.component';
-import { TwoComponent } from './components/two/two.component';
-import { InicioComponent } from './inicio/inicio.component';
+import { HistoryComponent } from './components/history/history.component';
+import { DevelopComponent } from './components/develop/develop.component';
+import { BeginningComponent } from './beginning/beginning.component';
+import { DownloadComponent } from './components/download/download.component';
+import { EnemiesComponent } from './components/enemies/enemies.component';
+import { HomeComponent } from './components/home/home.component';
+import { AcountComponent } from './components/acount/acount.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    OneComponent,
-    TwoComponent,
-    InicioComponent
+    HistoryComponent,
+    DevelopComponent,
+    BeginningComponent,
+    DownloadComponent,
+    EnemiesComponent,
+    HomeComponent,
+    AcountComponent
     ],
   imports: [
     BrowserModule,
@@ -24,8 +32,12 @@ import { InicioComponent } from './inicio/inicio.component';
     NgbModule,
     RouterModule.forRoot([
       {path: '', component: AppComponent},
-      {path: 'one', component: OneComponent},
-      {path: 'two', component: TwoComponent}
+      {path: 'home', component: HomeComponent},
+      {path: 'first', component: BeginningComponent},
+      {path: 'history', component: HistoryComponent},
+      {path: 'develop', component: DevelopComponent},
+      {path: 'enemies', component: EnemiesComponent},
+      {path: 'download', component: DownloadComponent}
     ])
   ],
   exports: [AppComponent],

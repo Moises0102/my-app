@@ -1,10 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
 
-body{
-  overflow: hidden;
-  background-image: url('assets/imagenes/1.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat
+.body{
+  position: absolute;
+  width: 100%;
+  height: -webkit-fill-available;
+  background-color:rgb(16, 14, 17) ;
+  background-image: url('assets/imagenes/bonfire.gif');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -100%;
+
 }
+
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
