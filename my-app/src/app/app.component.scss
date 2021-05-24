@@ -17,7 +17,7 @@
   }
 
   header > div > div > button {
-    background-color: rgb(16, 14, 17);
+    background-color:rgb(16, 14, 17);
     align-items: center;
     color: white;
     border:  none;
@@ -80,19 +80,25 @@
   }
 
   footer {
-    align-items: flex-end;
     height: 10%;
-    display: flex;
-    background-color: black;
+    background-color: rgb(23, 22, 24);
+   div{
     div{
       img{
-        width: 3%;
+        width: 15%;
+      }
+      p{
+        font-family: doctor;
+        font-size: x-large;
+        color: white;
       }
     }
+
     a{
       display: flex;
     align-items: center;
     }
+   }
   }
 
   /* Responsive Styles */
