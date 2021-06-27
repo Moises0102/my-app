@@ -7,10 +7,24 @@
   src: url('/assets/fonts/doctor_glitch/Doctor_Glitch.otf');
 }
 
+@font-face {
+  font-family: Debug;
+  src: url('/assets/fonts/debug/Debug.otf');
+}
+
+@font-face {
+  font-family: handwriting_black;
+  src: url('/assets/fonts/handwriting_black/Handwriting_black.otf');
+}
+@font-face {
+  font-family: tangerine;
+  src: url('/assets/fonts/Tangerine/Tangerine-Bold.ttf');
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: justify;
 }
 :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -75,8 +89,9 @@
 
   section{
     width: 80%;
+    height: 100%;
     height: -webkit-fill-available;
-    background-color:rgba(#ffffff, 0.03);
+    padding-bottom: 10px;
   }
 
   footer {
