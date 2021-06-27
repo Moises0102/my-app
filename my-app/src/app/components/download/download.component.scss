@@ -1,3 +1,44 @@
+
+.section{
+  padding: 3% 0;
+  background-color:rgba(#ffffff, 0.03);
+  width: 200%;
+  text-align: center;
+  h1{
+  color: white;
+  font-family: Doctor;
+   font-size: 4em;
+}
 p{
   color: white;
+  font-family: BadSignal;
+   font-size: 2em;
 }
+  .cabecera{
+    text-align: center;
+
+  }
+  div{
+    a{
+      color: white;
+    text-decoration: none;
+    font-family: badsignal;
+    }
+    a:visited{
+      background-color: rgb(16, 14, 17);
+      color: white;
+    }
+    a:hover{
+      background-color: white;
+      color: black;
+    }
+
+  }
+}
+.downloads{
+      align-items: center;
+      justify-content: center;
+    }
+img{
+      padding: 5%;
+    }
